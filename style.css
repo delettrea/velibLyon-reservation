@@ -1,0 +1,397 @@
+/* ALL */
+
+#map {
+    height: 100%;
+}
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    font-family: 'Overpass', sans-serif;
+    color: white;
+}
+
+#formulaire{
+    height: 377px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+canvas{
+    border: 1px solid white;
+    cursor: pointer;
+    height: 300px;
+    width: 300px;
+}
+
+#station{
+    padding-left: 12px;
+    padding-right: 12px;
+    background-color: rgb(52, 73, 94);
+}
+
+button{
+    padding: 12px 12px;
+    background-color: rgb(241, 196, 15);
+    border-radius: 5px;
+    border: 0;
+    font-family: 'Overpass', sans-serif;
+    margin: auto;
+    color: rgb(52, 73, 94);
+    font-weight: 600;
+    letter-spacing: 1px;
+    font-size: 0.9em;
+}
+
+#reservation{
+    margin: 25px auto;
+    display: flex;
+}
+
+.newStation{
+    background-color: grey;
+    color: white;
+    display: flex;
+    margin-top: 25px;
+    margin-bottom: 10px;
+}
+
+fieldset{
+    height: 300px;
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+li{
+    list-style-type: none;
+    padding: 6px 0px;
+}
+
+ul{
+    padding-top: 36px;
+    padding-left: 20px;
+    padding-right:20px;
+    margin: auto;
+}
+
+#formulaire p{
+    padding: 6px 0px;
+    display: flex;
+    justify-content: center;
+    margin-top: 59px;
+    line-height: 50px;
+}
+
+p{
+    color: white;
+}
+
+h1{
+    font-family: 'Bubbler One', sans-serif;
+    letter-spacing: 4px;
+    font-size: 2.5em;
+    color: rgb(33,150,243);
+}
+/*CHRONO*/
+
+#time, #already{
+    text-transform: uppercase;
+    margin-top: 50px;
+    margin-left: 50px;
+}
+
+/* DIAPO */
+
+/* boutons */
+
+.navRight, .navLeft, .close{
+    padding: 0;
+    background-color: rgba(255,255,255,0);
+}
+
+i{
+    color: rgba(0,0,0,0.2);
+}
+
+.navRight {
+    top: -225px;
+    left: 542px;
+    position: relative;
+}
+
+.navLeft{
+    top: -225px;
+    right: 21px;
+    position: relative;
+}
+
+#slide5 .navLeft{
+    right: 0px;
+}
+
+.close{
+    position: relative;
+    top: -411px;
+    left: -64px;
+}
+
+.reRun{
+    background-color: gray;
+    color : white;
+    margin: 0;
+    margin-top: 12px;
+}
+
+/* all slides */
+.visu{
+    border: 2px solid rgba(0,0,0,0.3);
+    border-radius: 5px;
+}
+
+.contenu{
+    width: 100%;
+    height: 100%;
+}
+
+.contenu p , .visu li{
+    color: rgb(33,150,243);
+    font-size: 1.3em;
+
+}
+
+#conteneur{
+    background-color : rgb(52, 73, 94);
+    width: 100%;
+    height: 650px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#carroussel{
+    width: 1000px;
+    height: 500px;
+    position: relative;
+    left: -50px;
+}
+
+.slide{
+    width: 500px;
+    height: 500px;
+    position: absolute;
+    top: 50px;
+    left: 25%;
+}
+
+.imgSlide{
+    border: 1px solid rgba(0,0,0,0.1);
+}
+
+/*#slide*/
+
+#slide5 .close{
+    position: relative;
+    top: -411px;
+    left: -25px;
+}
+
+#slide1 .close{
+    left: -25px;
+}
+
+#slide5 #butReserv{
+    position: inherit;
+    margin: 0;
+    margin-top: 17px;
+    padding: 12px 12px;
+    background-color: rgb(241, 196, 15);
+    border-radius: 5px;
+    border: 0;
+    font-family: 'Overpass', sans-serif;
+    color: rgb(52, 73, 94);
+    font-weight: 600;
+    letter-spacing: 1px;
+}
+
+
+#slide1 .contenu, #slide2 .contenu, #slide3 .contenu, #slide4 .contenu, #slide5 .contenu{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+
+#slide2 p{
+    margin-top: -9px;
+    padding: 0px 20px;
+}
+
+#slide3 p{
+    padding: 0 12px;
+    margin: 0;
+}
+
+#slide3 ul{
+    margin : 0;
+    padding-top: 17px;
+}
+
+#slide3 li{
+    text-align: left;
+    padding-bottom: 12px;
+}
+
+#slide3 li:first-child{
+    list-style-image: url('http://maps.google.com/mapfiles/ms/icons/green-dot.png');
+}
+
+#slide3 li:nth-child(2){
+    list-style-image: url('http://maps.google.com/mapfiles/ms/icons/orange-dot.png');
+}
+
+#slide3 li:last-child{
+    list-style-image: url('http://maps.google.com/mapfiles/ms/icons/red-dot.png');
+}
+
+#slide1{
+    z-index: 24;
+}
+
+
+#slide5, #slide4, #slide3, #slide2{
+    transform: perspective( 1100px ) rotateY( -45deg );
+}
+
+#slide5{
+    left: 700px;
+    z-index: 20;
+}
+
+#slide4{
+    left: 650px;
+    z-index: 21;
+}
+
+#slide3{
+    left: 600px;
+    z-index: 22;
+}
+
+#slide2{
+    left: 550px;
+    z-index: 23;
+}
+
+#slide1 .visu, #slide2 .visu, #slide3 .visu, #slide4 .visu, #slide5 .visu{
+    background-image: url("img/white.png");
+    width: 600px;
+    height: 400px;
+    z-index: 200;
+    border: 2px solid rgba(0,0,0,0.3);
+}
+
+
+#slide5 p{
+    padding: 0px 18px;
+}
+
+/*-------MEDIA QUERIES------*/
+
+@media (max-width: 1580px) {
+    /*diapo*/
+    #conteneur{
+        height: 500px;
+
+    }
+    #carroussel {
+        width: 550px;
+        height: 500px;
+        position: relative;
+        left:0;
+    }
+    .slide {
+        width: 500px;
+        height: 300px;
+        position: absolute;
+        top: 22px;
+        left: 0;
+    }
+    #slide1 {
+        z-index: 0;
+    }
+    #slide5, #slide4, #slide3, #slide2 {
+        transform: none;
+        z-index: 0;
+        left: 0;
+    }
+}
+@media (max-width: 768px){
+    #carroussel{
+        width: 605px;
+    }
+}
+
+@media (max-width: 682px){
+    .slide{
+        left : 0;
+        width: 100%;
+    }
+    #slide5, #slide4, #slide3, #slide2{
+        left : 0;
+        width: 100%;
+    }
+    #slide1 .visu, #slide2 .visu, #slide3 .visu, #slide4 .visu, #slide5 .visu{
+        width: 100%;
+    }
+}
+
+@media (max-width: 500px){
+    #reservation{
+        margin: 25px auto;
+    }
+    #time, #already{
+        margin-top: 25px;
+        margin-left: 25px;
+        margin-right: 25px;
+    }
+    /*diapo*/
+    ul{
+        padding-left: 40px;
+    }
+    .navRight{
+        left: 89%;
+    }
+    .slide{
+        left : 0;
+        width: 100%;
+        height: 100%;
+        top:0;
+    }
+    #slide5, #slide4, #slide3, #slide2{
+        left : 0;
+        width: 100%;
+        height: 100%;
+    }
+
+    #slide1 .visu, #slide2 .visu, #slide3 .visu, #slide4 .visu, #slide5 .visu{
+        width: 100%;
+        height: 100%;
+    }
+    .close{
+        top: -517px;
+        left: -30px;
+    }
+    .visu{
+        border-radius: 0px;
+    }
+    #slide1 .visu, #slide2 .visu, #slide3 .visu, #slide4 .visu, #slide5 .visu{
+        border: 0px solid rgba(0,0,0,0);
+    }
+}
