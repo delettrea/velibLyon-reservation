@@ -6,8 +6,8 @@ var Marker = {
             Infos.color(s);
             this.marker = new google.maps.Marker({
                 position: {
-                    lat: s.position[0],
-                    lng: s.position[1],
+                    lat: s.position["lat"],
+                    lng: s.position["lng"],
                 },
                 id: s.number,
                 name: s.name,

@@ -1,7 +1,7 @@
-var Map = {
+var VelibMap = {
     infoMap: {
         zoom: 13,
-        center: {lat: 48.856918, lng: 2.350889},
+        center: {lat: 45.7621258, lng: 4.8576067},
         styles: [
             {
                 "featureType": "poi.business",
@@ -21,7 +21,7 @@ var Map = {
     },
 
     initMap: function () {
-        Map.map = new google.maps.Map(document.getElementById('map'), Map.infoMap);
-        return Map.map;
+        VelibMap.map = new google.maps.Map(document.getElementById('map'), VelibMap.infoMap);
+        return VelibMap.map;
     }
 }
